@@ -1,7 +1,7 @@
 FROM romeoz/docker-apache-php:7.3
 
 RUN apt update \
-    && apt-get install -y curl git vim unzip libxslt-dev libbz2-dev libicu-dev postgresql postgresql-contrib libmemcached-dev php7.3-dev php7.3-mongo php-xdebug php7.3-bcmath \
+    && apt-get install -y curl git vim unzip libxslt-dev libbz2-dev libicu-dev postgresql postgresql-contrib libmemcached-dev php7.3-dev php7.3-mongo php-xdebug php7.3-bcmath php7.3-redis \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pecl install mongodb xdebug
